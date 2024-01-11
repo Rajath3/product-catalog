@@ -1,8 +1,12 @@
-import {Button, TableBody, TableCell, TableRow, TextField } from '@mui/material';
+import {Button, Link, TableBody, TableCell, TableRow, TextField } from '@mui/material';
 import React, { useState } from 'react'
 import columns from '../data/ProductColumns.json'
 import { useDispatch, useSelector } from 'react-redux';
 import { editProduct, removeProduct } from '../utils/productSlice';
+import EditIcon from '@mui/icons-material/Edit';
+import DeleteIcon from '@mui/icons-material/Delete';
+import SaveIcon from '@mui/icons-material/Save';
+import CancelIcon from '@mui/icons-material/Cancel';
 
 const ProductTableBody = () => {
     const [editableRow, setEditableRow] = useState(null);
@@ -44,24 +48,27 @@ const ProductTableBody = () => {
                             onChange={(event) => handleInputChange(event, row, column)}
                           />
                         ) : (
-                          column.format && typeof value === 'number'
-                            ? column.format(value)
-                            : value
-                        )}
+                            column.id === 'Name' ? // Check if the column is 'name'
+                                <Link href={`/product/${row.ID}`}>{value}</Link> :
+                                column.format && typeof value === 'number'
+                                    ? column.format(value)
+                                    : value)}
                         </TableCell>
                     )
                 })}
                 <TableCell>
                     {isEditable ? (
-                        <Button variant="solid" onClick={handleSave}>
-                        Save
-                        </Button>
+                        <>
+                        <SaveIcon sx={{cursor: 'pointer'}} onClick={handleSave}/>
+                        <CancelIcon sx={{cursor: 'pointer'}} onClick={handleSave} />
+                        </>
                     ) : (
-                        <Button variant="solid" onClick={() => handleEdit(row.ID)}>
-                        Edit
-                        </Button>
+                        <>
+                        <EditIcon sx={{cursor: 'pointer'}} onClick={() => handleEdit(row.ID)}/>
+                        <DeleteIcon sx={{cursor: 'pointer'}} onClick={() => handleRemove(row.ID)} />
+                        </>
                     )}
-                    <Button variant="solid" onClick={() => handleRemove(row.ID)}>Remove</Button>
+                    
                 </TableCell>
       </TableRow>
             );
