@@ -25,7 +25,8 @@ const AddProductModal = () => {
 
   return (
     <div>
-      <Button onClick={handleOpen}>Add Product</Button>
+      <Button size="large" variant="contained" color="primary"
+      onClick={handleOpen}>Add Product</Button>
       <Modal
         open={open}
         onClose={handleClose}
@@ -33,7 +34,7 @@ const AddProductModal = () => {
         aria-describedby="modal-modal-description"
       >
         <Box sx={style}>
-          <ProductForm/>
+          <ProductForm handleClose={handleClose}/>
         </Box>
       </Modal>
     </div>

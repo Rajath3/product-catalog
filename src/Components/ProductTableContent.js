@@ -1,5 +1,5 @@
 import React from 'react';
-import { Table, TableBody, TableCell, TableRow } from '@mui/material';
+import { Button, Table, TableBody, TableCell, TableRow } from '@mui/material';
 import { Link } from 'react-router-dom';
 
 const ProductTableContent = ({ data }) => {
@@ -21,7 +21,8 @@ const ProductTableContent = ({ data }) => {
                 ))}
             </TableBody>
         </Table>
-        <Link to='/'>Go back </Link>
+        <hr/>
+        <Button size="large" variant="contained" color="primary"  ><Link to='/'>Go back </Link></Button>
         </>
     );
 };

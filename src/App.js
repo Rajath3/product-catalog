@@ -22,7 +22,7 @@ function App() {
   return (
     <Provider store={appStore}>
       <div className="App">
-          <Typography level="h1" fontSize="lg" fontWeight="lg">Product Catalog</Typography>
+          <Typography  sx={{fontSize: '3rem', textAlign: 'center'}}>Product Catalog</Typography>
           <RouterProvider router={appRouter} />
       </div>
     </Provider>

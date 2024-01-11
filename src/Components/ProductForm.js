@@ -3,7 +3,7 @@ import { TextField, Button, Container, Grid } from '@mui/material';
 import { useDispatch } from 'react-redux';
 import { addProduct } from '../utils/productSlice';
 
-function ProductForm() {
+function ProductForm({handleClose}) {
     const dispatch = useDispatch();
     const id = useRef(null);
     const name = useRef(null);
@@ -24,10 +24,12 @@ function ProductForm() {
         "Description": description.current.value,
         "Selling Price": price.current.value,
         "Discount": discount.current.value
-    }))
+    }));
+    handleClose();
   }
   return (
     <Container maxWidth="lg" sx={{overflowY: 'auto'}}>
+      <h1>Please add in product details</h1>
       <form noValidate autoComplete="off">
         <Grid container spacing={2}>
           <Grid item xs={12} >
