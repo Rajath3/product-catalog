@@ -1,0 +1,34 @@
+[
+    {
+        "id": "ID",
+        "label": "ID"
+    },
+    {
+        "id": "Name",
+        "label": "Name"
+    },
+    {
+        "id": "Category",
+        "label": "Category"
+    },
+    {
+        "id": "Make",
+        "label": "Make"
+    },
+    {
+        "id": "Model",
+        "label": "Model"
+    },
+    {
+        "id": "Description",
+        "label": "Description"
+    },
+    {
+        "id": "Selling Price",
+        "label": "Selling Price"
+    },
+    {
+        "id": "Discount",
+        "label": "Discount"
+    }
+]

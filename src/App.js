@@ -1,24 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import { Container } from '@mui/material';
+import Producttable from './Components/Producttable';
+import appStore from './utils/appStore';
+import { Provider } from 'react-redux';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Provider store={appStore}>
+      <div className="App">
+        <Container>
+          <Producttable/ >
+        </Container>
+      </div>
+    </Provider>
   );
 }
 

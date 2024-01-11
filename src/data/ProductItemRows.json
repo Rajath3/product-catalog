@@ -1,0 +1,92 @@
+[
+    {
+        "ID": 7186,
+        "Name": "Product0",
+        "Category": "Electronics",
+        "Make": "Make0",
+        "Model": "Model0",
+        "Description": "This is a description for Product0",
+        "Selling Price": 259.51,
+        "Discount": 24.63
+    },
+    {
+        "ID": 9393,
+        "Name": "Product1",
+        "Category": "Furniture",
+        "Make": "Make1",
+        "Model": "Model1",
+        "Description": "This is a description for Product1",
+        "Selling Price": 607.12,
+        "Discount": 14.9
+    },
+    {
+        "ID": 3639,
+        "Name": "Product2",
+        "Category": "Books",
+        "Make": "Make2",
+        "Model": "Model2",
+        "Description": "This is a description for Product2",
+        "Selling Price": 430.95,
+        "Discount": 6.43
+    },
+    {
+        "ID": 4621,
+        "Name": "Product3",
+        "Category": "Clothing",
+        "Make": "Make3",
+        "Model": "Model3",
+        "Description": "This is a description for Product3",
+        "Selling Price": 350.00,
+        "Discount": 10.75
+    },
+    {
+        "ID": 5824,
+        "Name": "Product4",
+        "Category": "Gardening",
+        "Make": "Make4",
+        "Model": "Model4",
+        "Description": "This is a description for Product4",
+        "Selling Price": 275.99,
+        "Discount": 15.00
+    },
+    {
+        "ID": 6004,
+        "Name": "Product5",
+        "Category": "Tools",
+        "Make": "Make5",
+        "Model": "Model5",
+        "Description": "This is a description for Product5",
+        "Selling Price": 499.99,
+        "Discount": 20.00
+    },
+    {
+        "ID": 7321,
+        "Name": "Product6",
+        "Category": "Appliances",
+        "Make": "Make6",
+        "Model": "Model6",
+        "Description": "This is a description for Product6",
+        "Selling Price": 600.50,
+        "Discount": 30.20
+    },
+    {
+        "ID": 8457,
+        "Name": "Product7",
+        "Category": "Sports",
+        "Make": "Make7",
+        "Model": "Model7",
+        "Description": "This is a description for Product7",
+        "Selling Price": 320.40,
+        "Discount": 12.50
+    },
+    {
+        "ID": 9345,
+        "Name": "Product8",
+        "Category": "Automotive",
+        "Make": "Make8",
+        "Model": "Model8",
+        "Description": "This is a description for Product8",
+        "Selling Price": 450.60,
+        "Discount": 25.10
+    }
+]
