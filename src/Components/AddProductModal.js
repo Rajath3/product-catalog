@@ -16,7 +16,8 @@ const style = {
   p: 4,
 };
 
-export default function AddProductModal() {
+const AddProductModal = ({id}) => {
+  console.log(id);
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
@@ -37,3 +38,5 @@ export default function AddProductModal() {
     </div>
   );
 }
+
+export default AddProductModal;
