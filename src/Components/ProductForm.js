@@ -2,6 +2,7 @@ import React, { useRef } from 'react';
 import { TextField, Button, Container, Grid } from '@mui/material';
 import { useDispatch } from 'react-redux';
 import { addProduct } from '../utils/productSlice';
+import CloseIcon from '@mui/icons-material/Close';
 
 function ProductForm({handleClose}) {
     const dispatch = useDispatch();
@@ -29,6 +30,7 @@ function ProductForm({handleClose}) {
   }
   return (
     <Container maxWidth="lg" sx={{overflowY: 'auto'}}>
+      <CloseIcon style={{ cursor: 'pointer', marginLeft: '100%'}} onClick={handleClose}/>
       <h1>Please add in product details</h1>
       <form noValidate autoComplete="off">
         <Grid container spacing={2}>

@@ -14,7 +14,8 @@ Technical aspects:
 2. The initial data is loaded from JSON file and stored in local storage.
 3. Purpose of using local storage is to retain the data. Although we want persist the data, we can use nodejs app as backend as use API services from there.
 
-Improvements:
+Future scope for Improvements:
 
 1. Can use database/file in backend to persist data.
 2. Refactoring some components.
+3. Focus on row while editing
