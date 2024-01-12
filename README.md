@@ -17,3 +17,4 @@ Technical aspects:
 Improvements:
 
 1. Can use database/file in backend to persist data.
+2. Refactoring some components.
