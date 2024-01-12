@@ -36,11 +36,13 @@ const ProductTableBody = ({ rows, page, rowsPerPage }) => {
           <TableRow hover role="checkbox" tabIndex={-1} key={row.ID}>
             {columns.map((column) => {
               const value = row[column.id];
+              const col = column.id;
               return (
                 <TableCell key={column.id} align={column.align}>
                   {isEditable ? (
                     <TextField
                       value={value}
+                      disabled={col === 'ID' ? true : false}
                       variant="filled"
                       onChange={(event) => handleInputChange(event, row, column)}
                     />) : (column.id === 'Name' ?

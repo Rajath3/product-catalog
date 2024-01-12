@@ -35,7 +35,7 @@ function ProductForm({handleClose}) {
       <form noValidate autoComplete="off">
         <Grid container spacing={2}>
           <Grid item xs={12} >
-            <TextField fullWidth label="ID" variant="outlined" inputRef={id}/>
+            <TextField fullWidth label="ID" variant="outlined"  type="number" inputRef={id}/>
           </Grid>
           <Grid item xs={12}>
             <TextField fullWidth label="Name" variant="outlined" inputRef={name}/>
