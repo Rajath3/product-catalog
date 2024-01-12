@@ -3,7 +3,7 @@ Covered in this repository:
 Functional:
 
 1. Table display using MUI and React.
-2. The table data is populated via JSON file.
+2. The table data is populated via JSON file with Redux.
 3. The Add button at the top of table can be used to add record to the table.
 4. The table rows can be edited and deleted.
 5. The name column has link for individual products and clicking on them would visit the product detail page.
